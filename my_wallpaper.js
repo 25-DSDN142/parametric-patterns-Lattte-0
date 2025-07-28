@@ -3,7 +3,8 @@
 let whiteCol = [255,255,255];
 let brownCol = [206, 149, 119];
 let blackbear = [119, 73, 54]
-let blbSize   = [115,115]
+
+
 
 function setup_wallpaper(pWallpaper) {
   //pWallpaper.output_mode(DEVELOP_GLYPH);
