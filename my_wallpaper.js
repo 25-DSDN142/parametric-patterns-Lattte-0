@@ -1,10 +1,9 @@
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 30;
+
 let whiteCol = [255,255,255];
 let brownCol = [206, 149, 119];
-
-
+let blackbear = [119, 73, 54]
+let blbSize   = [115,115]
 
 function setup_wallpaper(pWallpaper) {
   //pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -25,11 +24,10 @@ function wallpaper_background() {
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
 scale(0.5,0.5)
-  drawBears(whiteCol)
+  drawBears(whiteCol,25,15)
 scale(0.7,0.7)
-  drawBears(whiteCol,200,200)
   drawBears(brownCol) 
-
+  drawBear (blackbear,140,140)
 
   
 }
@@ -64,19 +62,22 @@ circle(130,73, 20,20) //inner ear
    ellipse(133,126, 18, 10)
 translate(-xPos,-yPos);
 }
-function drawBear() {
+function drawBear(colSetting,xPos=0,yPos=0) {
 
- fill(206, 149, 119)
-stroke(191, 130, 101)
+translate(xPos,yPos);
+fill(colSetting);
+
+ //fill(206, 149, 119)
+stroke(47, 14, 7)
 circle(70,75, 40,40)  //ear
 circle(130,75, 40,40)// ear
 
-fill(191, 130, 101)
-stroke(191, 130, 101)
+//fill(191, 130, 101)
+stroke(101, 58, 42)
 circle(70,73, 20,20)  //inner ear
 circle(130,73, 20,20) //inner ear
 
- fill(206, 149, 119)
+ //fill(206, 149, 119)
   ellipse(100, 110, 100, 80) //face
 
   fill(0)
