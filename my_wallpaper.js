@@ -4,7 +4,7 @@ let whiteCol = [255,255,255];
 let brownCol = [206, 149, 119];
 let blackbear = [119, 73, 54]
 let bBears = (0.7,0.7)
-let wBear  = (0.5,0.5)
+let wBear  = (1,1)
 
 
 function setup_wallpaper(pWallpaper) {
@@ -25,19 +25,17 @@ function wallpaper_background() {
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-scale(wBear,0.5,0.5)
-  drawBears(whiteCol,25,15)
-scale(bBears,0.7,0.7)
+//scale(wBear,0.5,0.5)
+  drawBears(whiteCol,wBear,34,20)
+//scale(bBears,0.7,0.7)
   drawBears(brownCol) 
   drawBear (blackbear,140,140)
 
-if(wBear>0.5,0.5) {
-drawBear=35, 15;
+if(wBear<25,15) {
 
-} else {
+whiteCol=[206, 149, 119];
 
-
-}
+} 
     
 
   
