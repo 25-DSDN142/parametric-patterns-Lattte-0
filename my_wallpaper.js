@@ -25,13 +25,19 @@ function wallpaper_background() {
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-scale(wBear,.5,0.5, )
+scale(wBear,0.5,0.5)
   drawBears(whiteCol,25,15)
 scale(bBears,0.7,0.7)
   drawBears(brownCol) 
   drawBear (blackbear,140,140)
 
+if(wBear>0.5,0.5) {
+drawBear=35, 15;
 
+} else {
+
+
+}
     
 
   
