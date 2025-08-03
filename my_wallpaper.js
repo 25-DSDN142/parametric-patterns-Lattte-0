@@ -1,10 +1,11 @@
 //your parameter variables go here!
-let brownB = 125;
-let bbY  =125;
-let blackB =-100;
-let blbY =-40;
-let whiteB =15;
-let wBY   =45;
+let brownB = 125;    //x value
+let bbY  =125;       //y value
+let blackB =-100;    //x value
+let blbY =-40;       //y value
+let whiteB =15;      //x vule
+let wBY   =45;       //y value
+let whiteCol = false  //colour change for if statment
 
 function setup_wallpaper(pWallpaper) {
 //pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -20,18 +21,18 @@ pWallpaper.output_mode(GRID_WALLPAPER);
 }
 
 function wallpaper_background() {
-  background(168, 74, 50); //A paler burnt umber colour,  168, 74, 50, 211 117 86
+  background(168, 74, 50); //A paler burnt umber colour,  168, 74, 50-background colour 1, 211 117 86-background colour 2
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
 scale(0.7,0.7)
-  drawBearw(whiteB,wBY)
+  drawBearw(whiteB,wBY) //polar bear
 
 //scale(0.5,0.5)
-drawBears(brownB,bbY) 
+drawBears(brownB,bbY) //brown bear
 
 //scale(0.5,0.5)
-drawBear(blackB,blbY)
+drawBear(blackB,blbY)  //blackbear
 
 
 }
@@ -73,11 +74,11 @@ translate(xPos,yPos);
       
 stroke(47, 14, 7)
 
-let whiteCol = false
+let whiteCol = false 
 
 fill(119, 73, 54) //normal colour
 
-if(whiteCol){
+if(whiteCol){    //hehehehe pulled off an if sttament
 
   fill(242, 223, 206);  //white bear colours
 }
