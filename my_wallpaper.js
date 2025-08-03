@@ -1,9 +1,9 @@
 //your parameter variables go here!
-let brownB = 100;
-let bbY  =-25;
+let brownB = 125;
+let bbY  =125;
 let blackB =-100;
-let blbY =-25;
-let whiteB =0;
+let blbY =-40;
+let whiteB =15;
 let wBY   =45;
 
 function setup_wallpaper(pWallpaper) {
@@ -16,15 +16,15 @@ pWallpaper.output_mode(GRID_WALLPAPER);
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
   pWallpaper.grid_settings.cell_height = 200;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.row_offset  = 0;
 }
 
 function wallpaper_background() {
-  background(168, 74, 50); //A paler burnt umber colour,  168, 74, 50
+  background(168, 74, 50); //A paler burnt umber colour,  168, 74, 50, 211 117 86
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-scale(1,1)
+scale(0.7,0.7)
   drawBearw(whiteB,wBY)
 
 //scale(0.5,0.5)
